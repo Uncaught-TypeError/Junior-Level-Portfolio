@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a96c5020c6.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="bill" role="image" aria-label="Bill Cypher"></div>
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="menuIcon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="content">
+                    <div class="content__container">
+                        <ul class="content__container__list">
+                            <li class="content__container__list__item">UI/UX Designer</li>
+                            <li class="content__container__list__item">Software Dev</li>
+                            <li class="content__container__list__item">Web Dev</li>
+                            <li class="content__container__list__item">Digital Artist</li>
+                        </ul>
+                    </div>
+                </div>
+                <h1>Hi, I'm <span>Nick</span><br>From Myanmar</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------- About --------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "Hardworking", "Dedicated", "Creative", "Innovative", "Service-focused" ]' style="text-decoration:none; color: white;">
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <p>Junior Web Developer specializing in front end development. Unexperienced in this field yet eager to try new things and improving. Quite-versed in several programming languages such as HTML, CSS, Python, C++ and quite a few JavaScript. Enthusiastic for graphic design, pixel/voxel arts & digital illustrations</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Wed/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>Hunting for Jobs with skill related</li>
+                            <li><span>2022 - Current</span><br>Spring Boot Web Application(Industrial Training) at IMU</li>
+                            <li><span>03/2022 - 09/2022</span><br>Part Time Assistant English Teacher (English) - Queen Tuition, 
+                                Yangon</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br>Google UX Design (Certificate) from Coursera</li>
+                            <li><span>2019</span><br>Graphic Design Certificate from Phanteeyar Institude</li>
+                            <li><span>2020</span><br>Pearson BTEC Level 5 HND: Computing (Software Engineering) from IMU (Info Myanmar University), UK</li>
+                            <li><span>2022</span><br>Python Basic Certificate from Phanteeyar Institude</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Create and Design websites and pages to reflect a company's brand and information and ensure a user-friendly experience.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Create aesthetic elements by which people interact with a product, such as buttons, icons, menu bars, typography, colors, and more.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Comprise user experience (UX) and user interface (UI) elements.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/3js.jpg">
+                    <div class="layer">
+                        <h3>Three JS Projects</h3>
+                        <p>Animated 3D computer graphics in a web browser using WebGL.</p>
+                        <a href="./Three JS/three js course.zip" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/pixel.jpg">
+                    <div class="layer">
+                        <h3>Pixel Art</h3>
+                        <p>The artwork is created in 8-bit/16-bit retro-style</p>
+                        <a href="./PixelArt/PixelArtworks.zip" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/webdev1.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>A Website designed and created for organization of various objects.</p>
+                        <a href="./WebDev/Full Website.zip" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="hideDiv" class="work-grid">
+                <div class="work">
+                    <img src="./images/voxel.jpg">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>A Website designed and created for organization of various objects.</p>
+                        <a href="./Voxel/Voxel.zip" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/ecomm.jpg">
+                    <div class="layer">
+                        <h3>ECommerce Website</h3>
+                        <p>A Website designed and created for furniture store using html, css, javascript and php.</p>
+                        <a href="#" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/appdev.jpeg">
+                    <div class="layer">
+                        <h3>App Development</h3>
+                        <p>Library app developed by using java.</p>
+                        <a href="#" download><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" style="cursor: pointer;" onclick="myFunction()">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>yeeteey69@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09262636125</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100068889364672"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aung-chit-minn-889046238/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Nick CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nick.</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+            document.getElementById("menuIcon").style.display = "none";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+            document.getElementById("menuIcon").style.display = "block";
+        }
+    </script>
+    <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+'('+this.txt+'</span>'+')';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("hideDiv");
+            if (x.style.display === "grid") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "grid";
+            }
+        }
+        </script>
+</body>
+</html>
